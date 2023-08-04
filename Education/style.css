@@ -1,0 +1,405 @@
+*{
+    padding: 0;
+    margin:  0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    font-size: 2.5rem;
+    color: black;
+}
+span{
+    font-size: .9rem;
+}
+h6{
+    font-size: 1.5rem;
+    color: black;
+}
+
+/*----------------------------Navbar Start----------------*/
+
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1vw 5vw;
+    
+   
+   
+}
+nav .logo{
+    width: 120px;
+}
+nav .navigation{
+    display: flex;
+}
+nav .navigation ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav .navigation ul li{
+    list-style-type: none;
+    margin-left: 30px;
+}
+nav .navigation ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav .navigation ul li a.active,
+nav .navigation ul li a:hover {
+    color: brown;
+}
+#menubar{
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+#menubar-close{
+    display: none;
+}
+
+/*---------------------------Navbar Ends-------------------*/
+
+/*---------------------------Home Section Starts-----------*/
+
+#home{
+    background-image: url('images/bg1.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+}
+#home h2{
+    color:white;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+#home p{
+    width: 50%;
+    line-height: 1.5;
+    font-size: 0.9rem;
+    color: white;
+}
+#home .btn{
+    margin-top: 20px;
+}
+#home a{
+    text-decoration: none;
+    padding: 13px 35px;
+    border-radius: 5px;
+    background-color: white;
+}
+#home a.red{
+    color: white;
+    background-color: red;
+}
+#home a.red:hover{
+    background-color: white;
+    color: red;
+}
+#home a.brown{
+    color: white;
+    background-color: brown;
+}
+#home a.brown:hover{
+    background-color: white;
+    color: brown;
+}
+
+/*---------------------------Home Section Ends-----------*/
+
+/*--------------------------facilities------------------*/
+
+#facilities{
+    text-align: center;
+    padding: 5vw 10vw 0vw 10vw;
+}
+#facilities .full-fit{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 40px;
+}
+#facilities .box{
+    background-color: azure;
+    text-align: start;
+    padding: 1.2rem;
+    border-radius: 5px;
+}
+.box i{
+    color: brown;
+    font-size: 2.2rem;
+}
+.box h3{
+    padding: 12px 0 8px 0;
+}
+/*--------------------------facilities Ends------------------*/
+
+/*-------------------------Course section--------------------*/
+
+#courses{
+    text-align: center;
+    padding: 8vw 10vw 10vw 10vw;
+}
+.course-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap:1rem;
+    margin-top:40px
+}
+.course{
+    background-color: azure;
+    text-align: start;
+    position: relative;
+    height: 100%;
+}
+.course img{
+    width: 100%;
+    height: 60%;
+    background-position: center;
+    background-size: cover;
+}
+.course .detail{
+    padding: 15px 15px 0 15px;
+}
+.course i{
+    color: yellow;
+}
+.course .cost{
+    background-color: brown;
+    color: white;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    bottom: 100px;
+    line-height: 50px;
+
+}
+/*-------------------------Course section end--------------------*/
+
+/*------------------------Registration---------------------------*/
+#Registration{
+    padding: 6vw 8vw 6vw 6vw;
+    background-image: url('images/bg2.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.reminder h6{
+    color: white;
+}
+.reminder p{
+    color: white;
+}
+.reminder .time{
+    display: flex;
+    margin-top: 30px;
+}
+.time .date{
+    text-align: center;
+    padding: 13px 35px;
+    background-color: rgb(195, 190, 190);
+    border-radius: 10px;
+    margin: 5px;
+}
+.form{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 30px;
+
+}
+.form input{
+    margin: 15px;
+    padding: 15px 10px;
+    border: 1px solid brown;
+}
+.form .btn{
+    margin: 15px 0px 15px 15px;
+}
+.form a.brown{
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: brown;
+    color: white;
+}
+.form a.brown:hover{
+    color: brown;
+    background-color: white;
+}
+/*------------------------Registration-ends-------------------------*/
+
+/*--------------------------experts-------------------------------*/
+
+#expert{
+    padding: 8vw 8vw 8vw 8vw;
+    text-align: center;
+}
+.expert-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap:1rem;
+    margin-top: 50px;
+}
+.profile{
+    background-color: rgb(174, 174, 130);
+    padding: 30px 10px;
+}
+.pro-link{
+    margin-top: 10px;
+}
+.pro-link i{
+    padding: 10px 13px;
+    border: 1px solid brown;
+    border-radius: 5px;
+}
+.pro-link i:hover{
+    background-color: brown;
+    color: white;
+}
+/*----------------------footer----------------------*/
+
+footer{
+    padding: 10vw;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.footer-sec{
+    padding-bottom: 40px;
+}
+footer h3{
+    color: white;
+}
+footer li{
+   list-style-type: none;
+   color: white;
+   padding: 10px 0;
+   font-size: 15px ;
+}
+footer p{
+    color: white;
+}
+footer .subscribe{
+    margin-top: 20px;
+}
+footer input{
+    width: 220px;
+    padding: 15px 12px;
+    color: white;
+}
+footer .subscribe a{
+    text-decoration: none;
+    padding: 12px 15px;
+    background-color: white;
+}
+.subscribe a.brown{
+    color: white;
+    background-color: brown;
+}
+.subscribe a.brown:hover{
+    color: brown;
+    background-color: white;
+}
+footer .copyright{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+}
+/*----------------------footer- ends---------------------*/
+
+/*----------------------media query-----------------------*/
+
+@media  screen and (max-width:870px){
+    nav {
+        padding: 15px 20px;
+    }
+    nav img{
+        width: 100px;
+    }
+    #menubar{
+        display: initial;
+    }
+    #menubar-close{
+        display: initial;
+        padding: 30px 0px 20px 20px;
+    }
+    nav .navigation ul{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 200px;
+        height: 100vh;
+        background-color: rgba(115, 117, 178, 0.45);
+        top: 0;
+        right: -220px;
+        backdrop-filter: blur(4px);
+      
+        
+    }
+    nav .navigation ul.active{
+        right: 0;
+    }
+    nav .navigation ul li{
+        padding: 20px 0 20px 35px;
+        margin-left: 0;
+    }
+    nav .navigation ul li a{
+        color:white;
+    }
+    #home{
+        padding: 0;
+    }
+    #home p{
+        width: 90%;
+    }
+    #facilities{
+        padding: 8vw 5vw 0vw 8vw;
+    }
+    #courses{
+        padding: 8vw 4vw 8vw 4vw;
+    }
+    #Registration{
+        padding: 6vw 4vw 6vw 4vw;
+        grid-gap:2rem
+    }
+    .reminder .time{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+    #expert{
+        padding: 10vw 5vw 10vw 5vw;
+    }
+    .copyright .pro-link{
+        margin-top: 20px;
+    }
+}
